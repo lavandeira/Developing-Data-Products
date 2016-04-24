@@ -1,0 +1,45 @@
+Developing Data Products : Deploying a Shiny App
+========================================================
+author: Josue Lavandeira        
+date: April 24, 2016 
+width: 1200
+height: 800
+
+Background
+========================================================
+
+In the dataset 'iris' there are many observations which can be clustered in different forms, 
+this app uses the reactive clustering method to cluster the observations by the different 
+variables in the data. It can create up to 10 clusters and plot them in a matrix, which will 
+have as 'x' and 'y' axes, the different variables of the observations.
+
+The application also shows the data contained in each cluster, and additional documentation.
+
+
+Application goals
+========================================================
+
+There are a few goals that this application aims to comply:
+
+- It must be able to create between 1 and 10 clusters of data.
+- It must be able to plot these clusters in a single matrix.
+- It must be able to show the data contained in the clusters.
+- The clustering matrix must show each cluster in a different color.
+
+
+The 'iris' data
+========================================================
+We can observe the basic structure of the 'iris' data here:
+
+```{r}
+library(datasets)
+str(iris)
+```
+
+The 'iris' data
+========================================================
+Here we may observe the correlations between the 'iris' data variables.
+
+```{r}
+plot(iris)
+```
